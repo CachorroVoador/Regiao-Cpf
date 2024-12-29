@@ -5,7 +5,6 @@ const button: HTMLButtonElement = document.querySelector('.enviar') as HTMLButto
 const label: HTMLLabelElement = document.querySelector('.regiao') as HTMLLabelElement;
 
 const sendCPF = () => {
-  label.style.display = 'block';
   try {
     const cpf = new CPF(input.value);
     showText("A região ou as regiões em que foi ou foram emitido(s) o(s) CPF(s) é ou são: " + cpf.getCPFRegion());
